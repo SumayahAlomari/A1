@@ -16,7 +16,1535 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.4.1",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 205,
+              "y": -89.99999999999994
+            },
+            "size": {
+              "width": 320,
+              "height": 190
+            },
+            "attrs": {
+              "label": {
+                "text": "Edge Zone\n"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "e6337a18-f99c-4681-9991-916178401be0",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Edge Zone\n",
+              "description": "frontline communication layer in the crisis response system",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 558,
+              "y": -50
+            },
+            "size": {
+              "width": 380,
+              "height": 170
+            },
+            "attrs": {
+              "label": {
+                "text": "Cloud Broker"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "f67303ab-aa4e-4b0c-bf94-e841a7605c56",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Cloud Broker",
+              "description": "central messaging hub of the system.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 715,
+              "y": 190
+            },
+            "size": {
+              "width": 230,
+              "height": 160
+            },
+            "attrs": {
+              "label": {
+                "text": "Database Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "740712fb-8339-486a-82a9-2456636e79db",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Database Zone",
+              "description": "persistent data storage layer",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 240,
+              "y": 159.99999999999994
+            },
+            "size": {
+              "width": 420,
+              "height": 150
+            },
+            "attrs": {
+              "label": {
+                "text": "Command and Ops Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "e0b3de15-0e7e-4b0a-8d75-a9f646d5f323",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Command and Ops Zone",
+              "description": "operational brain of the system",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 25,
+              "y": 200
+            },
+            "size": {
+              "width": 180,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Crisis Command Operators"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "83e4ca14-3ff8-41a1-aa6a-7cee5c5e1fe9"
+                },
+                {
+                  "group": "right",
+                  "id": "d85000e5-1e3b-4ecd-b7da-1cef6bbf63f6"
+                },
+                {
+                  "group": "bottom",
+                  "id": "0ce872c2-9c69-4613-971c-2d9a818b012a"
+                },
+                {
+                  "group": "left",
+                  "id": "f6d4c8f8-969a-4d3b-be38-83167a5ba530"
+                }
+              ]
+            },
+            "id": "a4e498cb-96a9-41cc-a624-25aea021692b",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Crisis Command Operators",
+              "description": "centralized operations team responsible for issuing, monitoring, and adjusting rescue missions",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 220,
+              "y": -59.99999999999994
+            },
+            "size": {
+              "width": 280,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Drone Bridge Broker"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+                },
+                {
+                  "group": "right",
+                  "id": "6d011593-43c3-4f00-bfc6-c3a9fb3ca873"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+                },
+                {
+                  "group": "left",
+                  "id": "09754126-1d1d-49f7-b0d0-66a08875319e"
+                }
+              ]
+            },
+            "id": "893cf477-2dca-4f27-be91-2edb46412301",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Drone Bridge Broker",
+              "description": "local MQTT bridge that receives published messages from edge devices and forwards emergency alerts and environmental data to the cloud-level MQTT broker.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 500,
+              "y": -10
+            },
+            "size": {
+              "width": 280,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "MQTT Core Broker"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+                },
+                {
+                  "group": "right",
+                  "id": "6d011593-43c3-4f00-bfc6-c3a9fb3ca873"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+                },
+                {
+                  "group": "left",
+                  "id": "09754126-1d1d-49f7-b0d0-66a08875319e"
+                }
+              ]
+            },
+            "id": "34078988-1d5e-424c-baf5-1fd037ff195b",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "MQTT Core Broker",
+              "description": "central message broker that handles all MQTT messages in the system and subscribes to critical topics and routes messages to relevant clients",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 725,
+              "y": -40
+            },
+            "size": {
+              "width": 290,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "Subscriber Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+                },
+                {
+                  "group": "right",
+                  "id": "6d011593-43c3-4f00-bfc6-c3a9fb3ca873"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+                },
+                {
+                  "group": "left",
+                  "id": "09754126-1d1d-49f7-b0d0-66a08875319e"
+                }
+              ]
+            },
+            "id": "6fe87c10-9adf-40d2-8c5e-3e3b6bf6ec58",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Subscriber Service",
+              "description": "backend system that listens to MQTT topics and inserts relevant data into the rescue data DB using SQL commands",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 780,
+              "y": 215
+            },
+            "size": {
+              "width": 160,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Rescue Data DB"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+                },
+                {
+                  "group": "right",
+                  "id": "6d011593-43c3-4f00-bfc6-c3a9fb3ca873"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+                },
+                {
+                  "group": "left",
+                  "id": "09754126-1d1d-49f7-b0d0-66a08875319e"
+                }
+              ]
+            },
+            "id": "9d0f0784-da12-41fd-a7e2-ab56a21438db",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Process",
+              "name": "Rescue Data DB",
+              "description": "main storage layer and populated by the subscriber service and queried by grafana",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 505,
+              "y": 190
+            },
+            "size": {
+              "width": 140,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Grafana Ops\nDashboard"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+                },
+                {
+                  "group": "right",
+                  "id": "6d011593-43c3-4f00-bfc6-c3a9fb3ca873"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+                },
+                {
+                  "group": "left",
+                  "id": "09754126-1d1d-49f7-b0d0-66a08875319e"
+                }
+              ]
+            },
+            "id": "94776b6a-ea0c-403b-a840-45bcf888277c",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Process",
+              "name": "Grafana Ops\nDashboard",
+              "description": "real-time monitoring and visualization dashboard, interfaces bidirectionally with the crisis command unit, and queries the rescue data DB for historical or live mission data",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 310,
+              "y": 200
+            },
+            "size": {
+              "width": 170,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Command Unit"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+                },
+                {
+                  "group": "right",
+                  "id": "6d011593-43c3-4f00-bfc6-c3a9fb3ca873"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+                },
+                {
+                  "group": "left",
+                  "id": "09754126-1d1d-49f7-b0d0-66a08875319e"
+                }
+              ]
+            },
+            "id": "ffb9b818-bc79-4c51-990d-40631bb88838",
+            "zIndex": 8,
+            "data": {
+              "type": "tm.Process",
+              "name": "Command Unit",
+              "description": "central node that receives operational input from the crisis Command Unit and sends mission or drone commands to the MQTT Core Broker via topics. also sends internal operational status updates to grafana for tracking and visual alerts",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "children": [
+              "72c46e30-959b-4ddf-a4d1-a11560a7631d"
+            ]
+          },
+          {
+            "position": {
+              "x": 45,
+              "y": -10
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Survivor"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "83e4ca14-3ff8-41a1-aa6a-7cee5c5e1fe9"
+                },
+                {
+                  "group": "right",
+                  "id": "d85000e5-1e3b-4ecd-b7da-1cef6bbf63f6"
+                },
+                {
+                  "group": "bottom",
+                  "id": "0ce872c2-9c69-4613-971c-2d9a818b012a"
+                },
+                {
+                  "group": "left",
+                  "id": "f6d4c8f8-969a-4d3b-be38-83167a5ba530"
+                }
+              ]
+            },
+            "id": "ba5c2fe2-4582-4937-893f-fbfe823b7aba",
+            "zIndex": 9,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Survivor",
+              "description": "person in distress who sends emergency signals.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "query",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "query"
+            ],
+            "id": "4ec1208c-109c-41a4-ad2c-22772d30777d",
+            "source": {
+              "x": 606,
+              "y": 280
+            },
+            "target": {
+              "cell": "9d0f0784-da12-41fd-a7e2-ab56a21438db",
+              "port": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 310
+              },
+              {
+                "x": 670,
+                "y": 330
+              },
+              {
+                "x": 720,
+                "y": 360
+              },
+              {
+                "x": 760,
+                "y": 360
+              },
+              {
+                "x": 810,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "issue commands",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "issue commands"
+            ],
+            "id": "e70fc8be-ffae-46c6-9d78-a5385251cd95",
+            "source": {
+              "x": 205,
+              "y": 225
+            },
+            "target": {
+              "cell": "ffb9b818-bc79-4c51-990d-40631bb88838",
+              "port": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 225
+              },
+              {
+                "x": 280,
+                "y": 250
+              },
+              {
+                "x": 330,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "store alert metadata",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "store alert metadata"
+            ],
+            "id": "ab420ef2-246d-46ee-85cf-35c681eecce6",
+            "source": {
+              "x": 885,
+              "y": 80
+            },
+            "target": {
+              "cell": "9d0f0784-da12-41fd-a7e2-ab56a21438db",
+              "port": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+            },
+            "vertices": [
+              {
+                "x": 885,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "SOS alert signal",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "SOS alert signal"
+            ],
+            "id": "357492ad-125b-4907-ab1f-a625f472b29b",
+            "source": {
+              "x": 158,
+              "y": 10
+            },
+            "target": {
+              "cell": "893cf477-2dca-4f27-be91-2edb46412301",
+              "port": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "forwarded emergency alert",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "forwarded emergency alert"
+            ],
+            "id": "6531723c-dd13-46f7-a2b0-b3afae8dde5f",
+            "source": {
+              "x": 417,
+              "y": -25
+            },
+            "target": {
+              "x": 590,
+              "y": 20
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": -70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "send drone instructions",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "send drone instructions"
+            ],
+            "id": "7bf9229a-136c-47a5-89c4-a7dc533185c1",
+            "source": {
+              "x": 420,
+              "y": 210
+            },
+            "target": {
+              "cell": "893cf477-2dca-4f27-be91-2edb46412301",
+              "port": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+            },
+            "vertices": [
+              {
+                "x": 500,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "publish",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "publish"
+            ],
+            "id": "f09bcc90-0528-43c8-9ea1-97264f3dd760",
+            "source": {
+              "x": 688,
+              "y": 70
+            },
+            "target": {
+              "cell": "6fe87c10-9adf-40d2-8c5e-3e3b6bf6ec58",
+              "port": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "process data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "process data"
+            ],
+            "id": "a3324795-bb39-43be-bf96-0e69c66b34a8",
+            "source": {
+              "x": 100,
+              "y": 260
+            },
+            "target": {
+              "cell": "94776b6a-ea0c-403b-a840-45bcf888277c",
+              "port": "1590bada-4cae-4a3b-90e7-c86a52192bf6"
+            },
+            "vertices": [
+              {
+                "x": 180,
+                "y": 350
+              },
+              {
+                "x": 460,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "subscription",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "subscription"
+            ],
+            "id": "af466127-fa20-4b6a-9b86-927f0cac48e0",
+            "source": {
+              "cell": "6fe87c10-9adf-40d2-8c5e-3e3b6bf6ec58",
+              "port": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+            },
+            "target": {
+              "cell": "34078988-1d5e-424c-baf5-1fd037ff195b",
+              "port": "75fe8c7d-ec7a-4b08-a1b9-f38c5f66d996"
+            },
+            "vertices": []
+          }
+        ]
       }
     ],
     "diagramTop": 2,
